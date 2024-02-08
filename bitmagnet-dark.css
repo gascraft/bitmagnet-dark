@@ -4,6 +4,7 @@
 @version        1.0.0
 @description    A very basic dark theme for bitmagnet
 @author         gascraft
+@license        GPLv3
 ==/UserStyle== */
 @-moz-document url-prefix("https://bitmagnet.")
 {
@@ -13,7 +14,7 @@
     filter: invert() hue-rotate(180deg);
   }
 
-  /* revert a few elements that should be original colors and such */
+  /* fix images, stuff that was already dark, and stuff outside the main content */
   .button-refresh,
   .cdk-overlay-container,
   img.poster
