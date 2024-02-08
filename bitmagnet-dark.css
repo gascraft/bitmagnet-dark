@@ -1,0 +1,23 @@
+/* ==UserStyle==
+@name           bitmagnet dark - 0.6.2
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A very basic dark theme for bitmagnet
+@author         gascraft
+==/UserStyle== */
+@-moz-document url-prefix("https://bitmagnet.")
+{
+  app-torrent-content
+  {
+    /* invert colors but keep hue */
+    filter: invert() hue-rotate(180deg);
+  }
+
+  /* revert a few elements that should be original colors and such */
+  .button-refresh,
+  .cdk-overlay-container,
+  img.poster
+  {
+    filter: invert() hue-rotate(180deg);
+  }
+}
